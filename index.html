@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Multidisciplinary Portfolio | AI, Design, Shopify, Craft & Coaching</title>
+  <meta name="description" content="Personal portfolio of a product designer and strategist blending AI-driven systems, hands-on physical craft, Shopify e-commerce, and high-performance swim coaching." />
+  
+  <!-- Fonts & Stylesheet -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+
+  <!-- Navigation Header -->
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="#home" class="brand-logo">
+        <span class="brand-dot"></span>
+        <span>STUDIO / DECK</span>
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><button class="nav-link active" data-target="home">Home</button></li>
+          <li><button class="nav-link" data-target="work">Work</button></li>
+          <li><button class="nav-link" data-target="craft">Craft & Creative</button></li>
+          <li><button class="nav-link" data-target="coaching">Coaching</button></li>
+          <li><button class="nav-link" data-target="about">About & Contact</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===================================================================
+         HOMEPAGE (THE HUB)
+         =================================================================== -->
+    <section id="home" class="page-section">
+      <div class="container">
+        
+        <!-- Hero Grid -->
+        <div class="hero-wrapper">
+          <div>
+            <h1 class="hero-title">
+              Product designer and strategist blending AI-driven systems, hands-on craft, and performance coaching.
+            </h1>
+            <p class="hero-subtitle">
+              Bridging digital intelligence, high-growth e-commerce storefronts, physical artisan craftsmanship, and elite aquatic leadership under pressure.
+            </p>
+            <div class="hero-cta-group">
+              <a href="#work" class="btn btn-primary" onclick="window.location.hash='work'">Explore Selected Work &rarr;</a>
+              <a href="#about" class="btn btn-secondary" onclick="window.location.hash='about'">About & Contact</a>
+            </div>
+          </div>
+
+          <!-- Hero Image Container (Drawn illustration) -->
+          <div class="hero-image-card">
+            <img src="assets/images/hero_drawn_portrait.jpg" alt="Hand drawn portrait illustration of multidisciplinary product designer and coach" id="hero-drawn-portrait" />
+            <div class="hero-img-badge">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/></svg>
+              <span>Illustrated Portrait • Self-drawn</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Featured Highlights Grid -->
+        <div class="section-header">
+          <div class="section-tag">Featured Highlights</div>
+          <h2 class="section-title">Cross-Disciplinary Showcase</h2>
+          <p class="section-desc">Handpicked projects spanning AI products, e-commerce builds, physical objects, and athletic coaching.</p>
+        </div>
+
+        <div class="featured-grid">
+          
+          <!-- Card 1: AI Case Study -->
+          <article class="card" onclick="openProjectModal('synthflow-ai')">
+            <div class="card-img-wrapper">
+              <img src="assets/images/ai_case_study.jpg" alt="SynthFlow AI Design Studio" />
+              <span class="card-badge indigo">AI & Design</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">SynthFlow AI Design Studio</h3>
+              <p class="card-summary">Autonomous AI-assisted workflow engine that transforms user feedback into interactive wireframes and tokens.</p>
+              <div class="card-footer">
+                <span>3.4x faster iteration</span>
+                <span class="card-footer-link">Case Study &rarr;</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2: Shopify Experience -->
+          <article class="card" onclick="openProjectModal('aurora-luxe-shopify')">
+            <div class="card-img-wrapper">
+              <img src="assets/images/shopify_storefront.jpg" alt="Aurora Luxe Shopify Storefront" />
+              <span class="card-badge emerald">Shopify E-Commerce</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Aurora Luxe Shopify Plus Build</h3>
+              <p class="card-summary">Headless storefront redesign with dynamic liquid sections, custom checkout extensions, and AOV optimization.</p>
+              <div class="card-footer">
+                <span>+41% Conversion Lift</span>
+                <span class="card-footer-link">View Build &rarr;</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3: Craft Highlight -->
+          <article class="card" onclick="openProjectModal('kinetic-wood-craft')">
+            <div class="card-img-wrapper">
+              <img src="assets/images/craft_physical.jpg" alt="Kinetic Ergonomic Workstation Craft" />
+              <span class="card-badge amber">Craft & Physical</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Ergonomic Studio Workstation Craft</h3>
+              <p class="card-summary">Bespoke walnut and hand-stitched leather physical object designed for high-focus creative studio work.</p>
+              <div class="card-footer">
+                <span>Handcrafted Joinery</span>
+                <span class="card-footer-link">Process &rarr;</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 4: Swim Coaching -->
+          <article class="card" onclick="openProjectModal('swim-performance-lab')">
+            <div class="card-img-wrapper">
+              <img src="assets/images/swim_coaching.jpg" alt="Apex High-Performance Swim Program" />
+              <span class="card-badge cyan">Swim Coaching</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Apex High-Performance Squad</h3>
+              <p class="card-summary">Biomechanics-focused swim coaching methodology combining high-pressure leadership, video feedback, and squad growth.</p>
+              <div class="card-footer">
+                <span>18 National Qualifiers</span>
+                <span class="card-footer-link">Methodology &rarr;</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         1. WORK SECTION (AI, DESIGN & SHOPIFY)
+         =================================================================== -->
+    <section id="work" class="page-section" hidden>
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="section-tag">Digital & Tech Portfolio</div>
+          <h1 class="section-title">AI Systems, Product Design & Shopify Builds</h1>
+          <p class="section-desc">Iterative, outcomes-driven digital work focusing on user experience methodology, technical execution, and business metrics.</p>
+        </div>
+
+        <!-- Work Category Filter Tabs -->
+        <div class="filter-bar">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="ai">AI & Design Case Studies</button>
+          <button class="filter-btn" data-filter="shopify">Shopify E-Commerce</button>
+        </div>
+
+        <!-- Work Grid (Populated dynamically via JS) -->
+        <div id="work-grid-container" class="featured-grid"></div>
+
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         2. CRAFT & PHYSICAL PROJECTS
+         =================================================================== -->
+    <section id="craft" class="page-section" hidden>
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="section-tag" style="color: var(--accent-craft);">Hands-On Craftsmanship</div>
+          <h1 class="section-title">Physical Objects & Studio Artifacts</h1>
+          <p class="section-desc">A curated mood board of physical creations, material exploration, timber joinery, and tactile design concepts.</p>
+        </div>
+
+        <!-- Craft Gallery -->
+        <div class="craft-grid">
+          
+          <div class="craft-card">
+            <div class="card-img-wrapper" style="height: 280px;">
+              <img src="assets/images/craft_physical.jpg" alt="Walnut & Stitched Leather Studio Chair" />
+            </div>
+            <div class="craft-card-content">
+              <span class="materials-tag">Black Walnut • Hand-Stitched Leather • Brass</span>
+              <h3 style="font-size: 1.3rem; margin-bottom: 0.5rem;">Walnut & Stitched Leather Studio Chair</h3>
+              <p style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 1rem;">
+                Crafted using traditional mortise-and-tenon hand joinery paired with custom laser-etched templates and vegetable-tanned Italian leather.
+              </p>
+              <div style="font-size: 0.85rem; color: var(--text-muted);">
+                <strong>Creation Process:</strong> 60+ hours hand carving, oil rub finish, saddle stitching.
+              </div>
+            </div>
+          </div>
+
+          <div class="craft-card">
+            <div class="card-img-wrapper" style="height: 280px;">
+              <img src="assets/images/craft_physical.jpg" alt="Anodized Aluminum & Timber Deck" />
+            </div>
+            <div class="craft-card-content">
+              <span class="materials-tag">Anodized 6061 Aluminum • Japanese Cedar</span>
+              <h3 style="font-size: 1.3rem; margin-bottom: 0.5rem;">Tactile Acoustic Keyboard Deck</h3>
+              <p style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 1rem;">
+                Bridging mechanical hardware and organic warm timber. Precision CNC milled with hand-lathed side accents.
+              </p>
+              <div style="font-size: 0.85rem; color: var(--text-muted);">
+                <strong>Creation Process:</strong> CAD modeling, CNC milling, hand sanding, oil sealing.
+              </div>
+            </div>
+          </div>
+
+          <div class="craft-card">
+            <div class="card-img-wrapper" style="height: 280px;">
+              <img src="assets/images/craft_physical.jpg" alt="Master Craftsman Leather Tool Suite" />
+            </div>
+            <div class="craft-card-content">
+              <span class="materials-tag">Full-Grain Leather • Waxed Linen Thread</span>
+              <h3 style="font-size: 1.3rem; margin-bottom: 0.5rem;">Master Craftsman Leather Roll</h3>
+              <p style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 1rem;">
+                Designed to house precision woodworking chisels, digital calipers, and sketching instruments for workshop mobility.
+              </p>
+              <div style="font-size: 0.85rem; color: var(--text-muted);">
+                <strong>Creation Process:</strong> Hand-beveling, edge burnishing, hand saddle stitching.
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         3. COACHING & MENTORSHIP
+         =================================================================== -->
+    <section id="coaching" class="page-section" hidden>
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="section-tag" style="color: var(--accent-coaching);">Athletic Leadership</div>
+          <h1 class="section-title">Swim Coaching & Performance Development</h1>
+          <p class="section-desc">Framing athletic excellence around squad culture, technical precision, clear feedback loops, and leadership under pressure.</p>
+        </div>
+
+        <!-- Coaching Philosophy Banner -->
+        <div style="background: var(--bg-card); border-left: 4px solid var(--accent-coaching); padding: 2rem; border-radius: var(--radius-md); margin-bottom: 3.5rem;">
+          <h3 style="font-size: 0.85rem; text-transform: uppercase; color: var(--accent-coaching); letter-spacing: 0.05em; margin-bottom: 0.5rem;">Coaching Philosophy</h3>
+          <p style="font-size: 1.25rem; font-weight: 600; line-height: 1.5; color: var(--text-primary);">
+            "In the pool as in product design: true peak performance is built on foundational stroke mechanics, rapid feedback loops, and calm mental clarity when under high pressure."
+          </p>
+        </div>
+
+        <!-- 3 Pillars Grid -->
+        <div class="coaching-grid">
+          
+          <div class="coaching-pillar">
+            <div class="pillar-icon">🏊‍♂️</div>
+            <h3 style="font-size: 1.3rem; font-weight: 700; margin-bottom: 0.75rem;">Technical Stroke Methodology</h3>
+            <p style="color: var(--text-secondary); line-height: 1.6;">
+              Deconstructing stroke mechanics into precise micro-adjustments using high-speed underwater video capture and real-time biomechanical analysis.
+            </p>
+          </div>
+
+          <div class="coaching-pillar">
+            <div class="pillar-icon">⏱️</div>
+            <h3 style="font-size: 1.3rem; font-weight: 700; margin-bottom: 0.75rem;">Communication Under Pressure</h3>
+            <p style="color: var(--text-secondary); line-height: 1.6;">
+              Instilling calm focus during championship finals. Training athletes to execute race strategies decisively when split-second reactions determine victory.
+            </p>
+          </div>
+
+        </div>
+
+        <!-- Testimonials & Achievements -->
+        <div class="section-header">
+          <h2 class="section-title" style="font-size: 1.75rem;">Squad Achievements & Testimonials</h2>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+          
+          <div class="testimonial-card">
+            <p class="testimonial-quote">"The stroke technique breakdowns and high-performance mindset transformed my swimming. I cut 2.4 seconds off my 100m freestyle state qualifying time."</p>
+            <div class="testimonial-author">Marcus T.</div>
+            <div class="testimonial-role">State Gold Medalist & Senior Squad Captain</div>
+          </div>
+
+          <div class="testimonial-card">
+            <p class="testimonial-quote">"An extraordinary leader who brings product design clarity and calm focus directly to the poolside deck. The best squad mentor our club has ever had."</p>
+            <div class="testimonial-author">Sarah L.</div>
+            <div class="testimonial-role">Head Swim Club Director</div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         4. ABOUT & CONTACT
+         =================================================================== -->
+    <section id="about" class="page-section" hidden>
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="section-tag">Background & Contact</div>
+          <h1 class="section-title">Bridging Digital, Physical & Leadership</h1>
+          <p class="section-desc">Learn more about my multidisciplinary background or get in touch for collaborations, design consulting, and speaking.</p>
+        </div>
+
+        <div class="about-grid">
+          
+          <!-- Bio -->
+          <div class="bio-card">
+            <h2 style="font-size: 1.6rem; font-weight: 700; margin-bottom: 1.5rem;">About Me</h2>
+            
+            <p class="bio-paragraph">
+              I am a multidisciplinary product designer, e-commerce strategist, physical craftsman, and swim coach based at the intersection of digital technology and human athletic potential.
+            </p>
+            
+            <p class="bio-paragraph">
+              Whether I am designing generative AI user interfaces, scaling high-converting Shopify storefronts, carving hardwood studio furniture, or timing splits on the poolside deck—my core focus is creating meaningful, high-performance experiences.
+            </p>
+
+            <div style="margin-top: 2rem;">
+              <a href="#" onclick="showToast('Portfolio & Resume PDF download triggered!'); return false;" class="btn btn-secondary">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+                Download Portfolio / Resume PDF
+              </a>
+            </div>
+
+            <!-- Social Links -->
+            <div class="social-links-grid">
+              <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-link">LinkedIn ↗</a>
+              <a href="https://github.com" target="_blank" rel="noopener" class="social-link">GitHub ↗</a>
+              <a href="https://shopify.com" target="_blank" rel="noopener" class="social-link">Shopify Experts ↗</a>
+              <a href="https://twitter.com" target="_blank" rel="noopener" class="social-link">Twitter / X ↗</a>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-card">
+            <h2 style="font-size: 1.6rem; font-weight: 700; margin-bottom: 1.5rem;">Get in Touch</h2>
+            
+            <form id="contact-form">
+              <div class="form-group">
+                <label for="contact-name" class="form-label">Your Name</label>
+                <input type="text" id="contact-name" class="form-input" placeholder="e.g. Alex Morgan" required />
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email" class="form-label">Email Address</label>
+                <input type="email" id="contact-email" class="form-input" placeholder="alex@example.com" required />
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message" class="form-label">Project Details / Message</label>
+                <textarea id="contact-message" class="form-textarea" placeholder="Tell me about your AI project, Shopify build, craft commission, or coaching opportunity..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message &rarr;</button>
+            </form>
+
+            <div style="margin-top: 1.5rem; text-align: center;">
+              <button onclick="copyEmail()" style="background: none; border: none; color: var(--text-muted); font-size: 0.85rem; cursor: pointer; text-decoration: underline;">
+                Or click here to copy direct email address
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Project Detail Modal Dialog -->
+  <div id="modal-overlay" class="modal-overlay" hidden>
+    <div class="modal-container">
+      <button id="modal-close-btn" class="modal-close-btn" aria-label="Close modal">&times;</button>
+      <div id="modal-content-body"></div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Multidisciplinary Studio & Swim Deck • Crafted with Vanilla Web Technologies</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="scripts/data.js"></script>
+  <script src="scripts/app.js"></script>
+</body>
+</html>
